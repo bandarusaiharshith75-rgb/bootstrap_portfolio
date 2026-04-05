@@ -186,8 +186,15 @@ section {
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 <div class="container">
+
 <a class="navbar-brand">Sai Harshith</a>
 
+<!-- ✅ TOGGLE BUTTON (IMPORTANT FOR MOBILE) -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- ✅ COLLAPSIBLE MENU -->
 <div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link active" onclick="showSection('home', event)">Home</a></li>
@@ -198,6 +205,7 @@ section {
 <li class="nav-item"><a class="nav-link" onclick="showSection('contact', event)">Contact</a></li>
 </ul>
 </div>
+
 </div>
 </nav>
 
@@ -460,6 +468,6 @@ document.querySelectorAll('.nav-link').forEach(l=>l.classList.remove('active'));
 if(event) event.target.classList.add('active');
 }
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
